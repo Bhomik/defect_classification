@@ -81,7 +81,7 @@ train_generator = train_datagen.flow_from_directory(
 
 validation_datagen = ImageDataGenerator(rescale=1./255)
 validation_generator = validation_datagen.flow_from_directory(
-        '/mnt/disk3/rohit2/bhomik_work/JBM_data/valid/',  # This is the source directory for training images
+        '/mnt/disk3/rohit2/bhomik_work/JBM_data/valid/',  # This is the source directory for validation images
         target_size=(300, 300),  
         batch_size=6,
         class_mode='binary')
